@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document 1</title>
+    <link rel="stylesheet" href="css/styles.css">
 
     <style>
         /*selector de etiquetas*/
@@ -14,7 +15,8 @@
 
         /* selector de id*/
         #contenedor {
-            width: 80%;
+            
+            width: calc(80% - 40px);
             margin: 0 auto;
             background-color: rgb(207, 69, 147);
             padding: 20px;
@@ -33,57 +35,64 @@
 <body>
    <div id="contenedor"> 
 
-    <header>
-        <h1>Titulo</h1>
-    </header>
+        <header>
+            <h1>Titulo</h1>
+        </header>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="index.html">Inicio</a>
-            </li>
-            <li>
-                <a href="index.html">Pagina</a>
-            </li>
-            <li>
-                <a href="index.html">Block</a>
-            </li>
-            <li>
-                <a href="index.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="index.html">Pagina</a>
+                </li>
+                <li>
+                    <a href="index.html">Block</a>
+                </li>
+                <li>
+                    <a href="index.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
 
-    <section>
-        <article class="article">
-            <h2>Titulo del articulo 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat itaque ipsa odio labore explicabo sint, aliquam facere voluptatibus. Sint suscipit eius velit dolor reiciendis enim illo earum fuga inventore!</p>
-        </article>
-        <article class="article">
-            <h2>Titulo del articulo 2</h2>
-            <p>Texto</p>
-        </article>
-        <article class="article">
-            <h2>Titulo del articulo 3</h2>
-            <p>Texto</p>
-        </article>
-        <article class="article">
-            <h2>Titulo del articulo 4</h2>
-            <p>Texto</p>
-        </article>
+        <div class="clearfix"></div>
 
-    </section>
+        <div class="desarrollo">
 
-    <aside>
-        <h2>Barra lateral</h2>
-        <form action="text" >
-            <input type="text" value="Buscar">
-        </form>
-    </aside>
+        <section class="contenido-principal">
+            <article class="article">
+                <h2>Titulo del articulo 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugiat itaque ipsa odio labore explicabo sint, aliquam facere voluptatibus. Sint suscipit eius velit dolor reiciendis enim illo earum fuga inventore!</p>
+            </article>
+            <article class="article">
+                <h2>Titulo del articulo 2</h2>
+                <p>Texto</p>
+            </article>
+            <article class="article">
+                <h2>Titulo del articulo 3</h2>
+                <p>Texto</p>
+            </article>
+            <article class="article">
+                <h2>Titulo del articulo 4</h2>
+                <p>Texto</p>
+            </article>
 
-    <footer>
-        Pie de pagina
-    </footer>
+        </section>
+
+
+        <aside>
+            <h2>Barra lateral</h2>
+            <form action="text" >
+                <input type="text" value="Buscar">
+            </form>
+        </aside>
+        </div>
+        <div class="clearfix"></div>
+
+        <footer>
+            Pie de pagina
+        </footer>
 
    </div> 
 
